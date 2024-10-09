@@ -22,5 +22,6 @@ urlpatterns = [
     # path('api/', include('api.urls')),
     path('user/', get_user, name='get_user'),
     path('user/create/', create_user, name='create_user'),
+    path('user/<int:id>', user_details, name='user_details'),
     path('admin/', admin.site.urls),
 ]
