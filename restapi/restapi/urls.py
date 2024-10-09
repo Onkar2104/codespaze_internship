@@ -19,6 +19,8 @@ from django.urls import path, include
 from api.views import * 
 
 urlpatterns = [
-    path('api/', include('api.urls')),
+    # path('api/', include('api.urls')),
+    path('user/', get_user, name='get_user'),
+    path('user/create/', create_user, name='create_user'),
     path('admin/', admin.site.urls),
 ]
